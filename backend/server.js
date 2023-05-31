@@ -13,7 +13,8 @@ app.use(express.json());
 app.use(express.urlencoded({extended: false}))
 
 //middleware that helps organize routing for the endpoint '/api/goals'
-app.use('/api/goals', require('./routes/goalRoutes.js'))
+app.use('/api/goals', require('./routes/goalRoutes'))
+app.use('/api/users', require('./routes/userRoutes'))
 
 app.use(errorHandler);
 

@@ -1,4 +1,5 @@
 const asyncHandler = require('express-async-handler')
+//wrapping in async handler to handle exceptions easily
 
 const Goal = require('../models/goalModel');
 
